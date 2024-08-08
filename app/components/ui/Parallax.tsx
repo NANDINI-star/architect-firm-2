@@ -33,8 +33,20 @@ export const ParallaxScroll = ({
       className={cn(" mx-auto items-start antialiased w-full relative", className)}
       ref={gridRef}
     >
+      <h1
+          // initial={{ opacity: 0.5, y: 0 }}
+          // whileInView={{ opacity: 1, y: -168 }}
+          // transition={{
+          //   delay: 0.3,
+          //   duration: 0.8,
+          //   ease: "easeInOut",
+          // }}
+          className="mt-12 bg-gradient-to-br from-slate-300 to-slate-300 py-12 bg-clip-text text-left text-4xl font-medium tracking-tight text-transparent md:text-5xl"
+        >
+          Projects
+        </h1>
       <div
-        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start  max-w-5xl mx-auto gap-10 py-40 px-10"
+        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 items-start  max-w-5xl mx-auto gap-10 py-30 px-10"
         ref={gridRef}
       >
         <div className="grid gap-10">
